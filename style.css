@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+header {
+    background-color: #eee;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    align-items: center;
+}
+
+header .logo {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-left: 10px;
+    
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    margin-right: 10px;
+    
+    }
+
+header nav ul li a {
+    padding: 18px;
+    text-decoration: none;
+    color: rgb(58, 55, 55);
+    font-weight: bold;
+}
+
+main { 
+    display: flex;
+    justify-content: space-between;
+    padding-left: 15px;
+    color: rgb(36, 34, 194);
+}
+
+main aside {
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 300px;
+}
+
+main aside ul li {
+    list-style: none;
+    padding-bottom: 10px;
+    padding-top: 5px;
+}
+
+main aside h2 {
+    padding-top: 55px;
+    padding-bottom: 10px;
+}
+
+article { 
+    max-width: 100%;
+}
+
+main article {
+    padding-top: 80px;
+    padding-left: 100px;
+}
+
+footer {
+    background-color: #eee;
+    text-align: center;
+    margin-top: 150px;
+    padding: 20px;
+}
+
+@media (max-width:512px)
+{
+    main { flex-direction: column;}
+    main article { padding:0; margin-top: 15px; margin-left: 20px;}
+    main aside { margin-left: 20px; flex-grow: 1; flex-basis:auto;}
+}
+
+.wrapper {
+    display:grid;
+    grid-template-columns: 1fr 3fr;
+    grid-column-gap: 1em;
+    grid-row-gap: 2em;
+    margin-top: 30px;
+    margin-left: 45px;
+    color: rgb(36, 34, 194);
+    }
+
+.wrapper > div{
+    padding: 1em;
+}
+
+
+.about {
+    margin-top: 60px;
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+.about p {
+    padding-top:10px;
+}
+
+.contact {
+    margin-top: 80px;
+    text-align: center;
+   }
+
+.contact p {
+    padding-top:5px;
+    padding-bottom:10px;
+    color: rgb(36, 34, 194);
+}
+
+.contact h2{
+    padding-bottom: 20px;
+    color: rgb(36, 34, 194);
+}
+
+.current a {
+    color: grey;
+    text-decoration:underline;
+    }
